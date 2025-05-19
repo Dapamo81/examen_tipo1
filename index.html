@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Opcion1</title>
+    <link href = "css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/function.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Examen 1</h1>
+    </header>
+    <section>
+        <div class = "vcard">
+            <h2>Calculo de cuentas + propina.</h2>
+
+            <label for="cuenta">Total Cuenta: </label>
+            <input type="number" id="cuenta" /><br/><br/>
+
+            <label for="propina">Porcentaje de propina a dejar: </label>
+            <input type="number" id="propina" /><br/><br/>
+
+            <label for="personas">Número de personas a dividir: </label>
+            <input type="number" id="personas" /><br/><br/>
+
+            <button id="botonCalcular">Calcular</button>
+
+            <div class="error" id="error"></div>
+        </div>
+
+        <div class="resultado" id="resultado">
+            <p><strong>Propina: </strong><span id="totalPropina"></span> €</p>
+            <p><strong>Total a pagar con propina: </strong><span id="totalPagar"></span> €</p>
+            <p><strong>A pagar por persona: </strong><span id="porPersona"></span> € / pp</p>
+        </div>
+
+       
+
+    </section>
+    <footer>
+     
+    </footer>
+</body>
+
+</html>
