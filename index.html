@@ -7,14 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen Opcion1</title>
     <link href = "css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/function.js" defer></script>
+    <script src="js/functionExamen1.js" defer></script>
+    <script src="js/functionExamen2.js" defer></script>
+    <script src="js/funcionExamen3.js" defer></script>
+    <script src="js/funcionMenu.js" defer></script>
 </head>
 <body>
     <header>
-       <h1>Examen 1</h1>
+    <h1>Examen</h1>
+       <nav class="menu">
+            <button class="botonMenu" id="botonExamen1">Examen 1</button>
+            <button class="botonMenu" id="botonExamen2">Examen 2</button>
+            <button class="botonMenu" id="botonExamen3">Examen 3</button>
+       </nav>
     </header>
     <section>
-        <div class = "vcard">
+<!--Examen 1-->
+        <div class = "vcard" id="examen1">
             <h2>Calculo de cuentas + propina.</h2>
 
             <label for="cuenta">Total Cuenta: </label>
@@ -36,8 +45,32 @@
             <p><strong>Total a pagar con propina: </strong><span id="totalPagar"></span> €</p>
             <p><strong>A pagar por persona: </strong><span id="porPersona"></span> € / pp</p>
         </div>
+        
+<!--Examen 2-->
+        <div class = "vcard" id="examen2">
+            <h2>Juego de preguntas</h2>
+            <div id="pregutnaContainer">
+                <div class="preguntas" id="preguntaTexto"></div>
+                <div class="opciones" id="opcionesContainer"></div>
+            </div>
+            <button id="botonSiguiente">Siguiente</button>
+        </div>
 
-       
+        <div class="resultado2" id="resultado2"></div>   
+        <div class="error" id="error"></div>
+
+<!--Examen 3-->
+        <div class = "vcard" id="examen3">
+            <h2>Tablero de Luces</h2>
+
+            <div id="grid"></div>
+
+            <div class="controles" id="controles">
+                <button class="botonControl" id="encenderTodo">Encender todo</button>
+                <button class="botonControl" id="apagarTodo">Apagar todo</button>
+                <button class="botonControl" id="alternar">Alternar</button>
+            </div>
+        </div>    
 
     </section>
     <footer>

@@ -14,8 +14,8 @@ document.getElementById("botonCalcular").addEventListener("click", function(){
     const porPersona = document.getElementById("porPersona");
 
     // Limpiar mensajes anteriores
-    error.textContent = '';
-    resultado.style.display = 'none';
+    error.textContent = "";
+    resultado.style.display = "none";
 
     //calculos
 
@@ -25,10 +25,10 @@ document.getElementById("botonCalcular").addEventListener("click", function(){
     
     propinaSpan.textContent = propina.toFixed(2);
     totalPagar.textContent = total.toFixed(2);
-    porPersona.textContent = totalPorPersona;
+    porPersona.textContent = totalPorPersona.toFixed(2);
 
     //para mostrar el div resultado
-    resultado.style.display = 'block';
+    resultado.style.display = "block";
   
     //Validacion.
 
